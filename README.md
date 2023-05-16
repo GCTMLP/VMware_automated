@@ -1,37 +1,10 @@
 # VMware_automated
-Автоматизированная настройка виртуальных машин при помощи библиотеки pyvmomi, развернутых на сервере под управлением гиппервизора VMware ESXI
+Automated configuration of virtual machines using the pyvmomi library deployed on server with VMware ESXI hypervisor
 
-1) execute.py - запуск какого-либа скрипта через оболочку PowerShell 
-- host - ip хоста esxi,
-- user - пользователь хоста esxi, 
-- pwd - пароль хоста esxi, 
-- vm_name -  название виртуальной машины, 
-- script_path - путь до скрипта, который хотим запустить, 
-- username_to_auth - имя пользователя виртуальной машины, 
-- password_to_auth- пароль от виртуальной машины
- 
-2) get_info.py - получение различного рода информации о виртуальных машинах 
-- по аналогии с параметрами, указанными к скрипту № 1
+1) execute.py - running  script by PowerShell shell
 
-3) power_on.py - функции включения и выключения виртуальных машин 
-- host - ip хоста esxi, 
-- user - пользователь хоста esxi, 
-- pwd - пароль хоста esxi, 
-- name_vm -  название виртуальной машины
+2) power_on.py - functions for turning on and off virtual machines
 
-4) set_tmp_info.py - запись комментария к виртуальной машине или к шаблону виртуальной машины 
-- host - ip хоста esxi, 
-- user - пользователь хоста esxi, 
-- pwd - пароль хоста esxi, 
-- annotation - комментарий к виртуальной машине, 
-- tmp - имя виртуальной машины или шаблона виртуальной машины
+3) set_tmp_info.py - writing a comment to a virtual machine or to a virtual machine template
 
-5) upload_file.py - загрузка файла на виртуальную машину с указанием пути загрузки
-- host - ip хоста esxi, 
-- user - пользователь хоста esxi, 
-- pwd - пароль хоста esxi, 
-- name -  название виртуальной машины, 
-- file - путь к файлу на хостовой машине, 
-- path_to_upload - путь для загрузка файла, 
-- username_to_auth - имя пользователя виртуальной машины,
-- password_to_auth- пароль от виртуальной машины
+4) upload_file.py - uploading a file to a virtual machine 
