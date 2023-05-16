@@ -2,7 +2,6 @@ from pyVim.connect import SmartConnectNoSSL
 from pyVmomi import vim
 import ssl
 
-#execute script on vm with windows
 def execute_script(host, user, pwd, vm_name, script_path, username_to_auth,
                    password_to_auth):
     '''
